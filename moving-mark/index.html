@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mark Does Not Stay</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="scene" aria-label="A boat drifting through a dark river">
+      <div id="opening" class="opening">
+        <p class="eyebrow">AN EXPERIMENT IN RETURNING</p>
+        <h1>The Mark<br>Does Not Stay.</h1>
+        <button id="enter">step into the river</button>
+      </div>
+      <p id="line" class="line" aria-live="polite">I marked the place where it disappeared.</p>
+      <button id="mark" class="mark" aria-label="Look at the mark on the boat">⌁</button>
+      <div id="memory" class="memory" hidden>
+        <label for="words">What are you still looking for?</label>
+        <textarea id="words" maxlength="180" placeholder="Leave only a trace."></textarea>
+        <button id="release">release it into the water</button>
+      </div>
+      <p class="hint">drag to look around · W / ↑ forward · S / ↓ return · A / D turn</p>
+    </main>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
